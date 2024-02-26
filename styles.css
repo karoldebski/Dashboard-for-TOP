@@ -1,18 +1,18 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #F8F8F8
+
 }
 
 .container {
-    width: calc(100% - 20px);
-    height: calc(100vh - 2px);
+    width: 100%;
+    max-width: 1200px;
     display: grid;
-    box-sizing: border-box;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    padding: 10px 10px 10px 106px;
-    margin: 10px auto;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
@@ -22,6 +22,12 @@
 
 nav {
     width: 96px;
+    border-radius: 0px 30px 30px 0px;
+
+}
+
+.nav img {
+    background-color: white;
 }
 
 .menu {
@@ -37,6 +43,7 @@ nav {
     padding: 10px;
     box-sizing: border-box;
     z-index: 1000;
+    background-color: white;
 }
 
 .navbar ul {
@@ -48,6 +55,7 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: white;
 }
 
 .navbar li {
@@ -74,7 +82,7 @@ li a:active, .navbar li a:hover, .settingstab li a:active, .settingstab li a:hov
 
 .logo {
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 
@@ -82,10 +90,41 @@ li a:active, .navbar li a:hover, .settingstab li a:active, .settingstab li a:hov
 /* Header */
 
 .header {
-    grid-area: header;
-
+   padding-top: 35px;
+   display: flex;
+   justify-content: space-between;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.search input {
+    display: inline-block;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0 solid;
+    background-color: transparent;
+    padding: 10px;
+
+}
+.search img {
+    display: inline-block;
+}
+
+.friends {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.friends img {
+    border-radius: 30px;
+}
 
 
 
@@ -95,7 +134,7 @@ li a:active, .navbar li a:hover, .settingstab li a:active, .settingstab li a:hov
 /* Mains */
 
 .mains {
-    grid-area: mains;
+    
 }
 
 
@@ -106,3 +145,17 @@ li a:active, .navbar li a:hover, .settingstab li a:active, .settingstab li a:hov
 
 
 /* Attributes */
+
+nav hr {
+    background-color: #a3a3a3;
+    border: 0;
+    height: 1px;
+    width: 70px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Fonts */ 
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
