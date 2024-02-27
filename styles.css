@@ -4,9 +4,16 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #F8F8F8
-
 }
+
+body {
+    background-color: #F8F8F8
+}
+
+/* --- 
+
+*/
+
 
 .container {
     width: 100%;
@@ -30,10 +37,6 @@ nav {
 
 }
 
-.nav img {
-    background-color: white;
-}
-
 .menu {
     position: fixed;
     top: 0;
@@ -52,48 +55,38 @@ nav {
 .navbar ul {
     display: flex;
     gap: 10px;
-    background-color: white;
-    
 }
 
 .menu .navbar, .menu .navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: white;
 }
 
 .navbar li {
     margin-bottom: 50px;
-    background-color: white;
 }
 
 .navbar li:last-child {
     margin-bottom: 0px;
-    background-color: white;
 }
 
 
 li a:active, .navbar li a:hover, .settingstab li a:active, .settingstab li a:hover {
     opacity: 100%;
-    background-color: white;
 }
 .navbar li a, .settingstab li a {
     opacity: 60%;
-    background-color: white;
 }
 .settingstab {
     display: flex;
     margin-top: auto;
     padding-bottom: 30px;
-    background-color: white;
-   
 }
 
 .logo {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: white;
 }
 
 
@@ -104,6 +97,7 @@ li a:active, .navbar li a:hover, .settingstab li a:active, .settingstab li a:hov
    padding-top: 35px;
    display: flex;
    justify-content: space-between;
+   margin-bottom: 50px;
 }
 
 .search {
@@ -147,17 +141,14 @@ li a:active, .navbar li a:hover, .settingstab li a:active, .settingstab li a:hov
 
 .mains {
     display: flex;
-    margin-top: 100px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 0 auto;
+    gap: 40px;
 }
 
 /* Content text */
 
-.text {
-    padding: 30px 20px 30px 20px;
-    background-color: white;
-    border-radius: 10px;
-
-}
 
 h1 {
     font-family: "DM Sans", sans-serif;
@@ -172,6 +163,7 @@ p {
     font-size: 14px;
     font-weight: 400;
     color: #000000;
+    padding-right: 20px;
 
     opacity: 40%;
 
@@ -182,22 +174,64 @@ a {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
+    text-decoration-line: none;
 
-    color: blue;
+    color: #4339F2;
 }
 
 
 
+/* Content Box */
 
-
-.coverage {
+.content-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 29.5%;
+    padding: 30px 20px 30px 20px;
+    background-color: white;
+    border-radius: 10px;
 
 }
 
+.coverage img{
+    min-width: 286px;
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+/* -- Content box with pic -- */
 
 .text-image {
-
+    display:flex;
+    justify-content: space-between;
 }
+
+.copyv2 {
+    padding-top: max(350px);
+}
+
+.text-image p {
+    color: white;
+    opacity: 80%;
+}
+.text-image h1 {
+    color: white;
+}
+
+
+
+.background-box-1, .background-box-1 {
+    background: url(img/pictures/matthew-henry-6fXXM0ePcq0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 
 
 
@@ -219,25 +253,33 @@ a {
     text-align: center;
 }
 
-.Deep {
-    background-color: #DAD7FE;
-
+.hash {
     height: 24px;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 10px;
     margin-bottom: 15px;
     box-sizing: border-box;
 }
 
-.Minimal {
-    
-        background-color: #FFE5D3;
-        
-        height: 24px;
-        padding: 5px;
-        border-radius: 10px;
-        margin-bottom: 15px;
-        box-sizing: border-box;
+.Deep, .Dogs, .Found, .Hubble, .Designer, .Tulsa, .Text {
+    background-color: #DAD7FE;
+}
+
+.Minimal, .Behance, .Glasgow, .Toronto, .Khartoum, .Edinburg, .Lost {  
+    background-color: #FFE5D3;
+}
+
+.Lost, .Green, .Detroit {
+    background-color: #E2FBD7;
+}
+
+.Taipei, .Mens, .Alexandria, .Milan, .Columbus {
+    background-color: #FFF5CC;
+}
+
+.Belgrade, .Harare, .Bogota {
+    background-color: #CCF8FE;
+
 }
 
 /* Attributes */
