@@ -11,17 +11,28 @@ body {
     background-color: #F8F8F8
 }
 
-/* --- 
-
-*/
-
 
 .container {
-    width: 100%;
+    display: flex;
     min-width: 300px;
     padding-left: 160px;
     padding-right: 60px;
+    flex-wrap: wrap;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+
+.container, .column {
+    gap: 30px;
+}
+
 
 /*  Menu */
 
@@ -140,21 +151,6 @@ li a:active, .navbar li a:hover {
 
 
 
-/* Mains */
-
-.mains {    
-    display: grid;
-    max-width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
-    position: relative;
-    grid-gap: 20px;
-    
-
-}
-
 /* Content text */
 
 
@@ -194,19 +190,15 @@ a {
 .content-box {
     display: flex;
     flex-direction: column;    
-    min-width: 300px;
-    width: 100%;
-    height: fit-content;
+   
     padding: 30px 20px 30px 20px;
     background-color: white;
     border-radius: 10px;
     position: relative;
-    
-
 }
 
 .coverage img{
-    width: 100%;
+    width: 1600px;
     max-height: 120px;
     object-fit: cover;
     
@@ -216,11 +208,25 @@ a {
 }
 
 
-/* -- Content box with pic -- */
+/* -- Content box with pic 
+-- */
 
+
+.text {
+    min-height: 220px;
+}
+
+.picture {
+    min-height: 350px;
+}
+
+.picture img {
+    width: 100%;
+}
 .text-image {
     display:flex;
     justify-content: space-between;
+    min-height: 600px;
 }
 
 .copyv2 {
